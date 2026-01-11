@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: practica   # Nombre de la aplicación Spring Boot
+
+
+  mongodb:
+     uri: mongodb://root:root@localhost:27017/mydb?authSource=admin
+
+  rabbitmq:
+    host: localhost     # Dirección del broker RabbitMQ
+    port: 5672          # Puerto del broker
+    username: root      # Usuario para conectarse a RabbitMQ
+    password: root      # Contraseña
+    virtual-host: /     # Virtual host en RabbitMQ (espacio aislado para colas y exchanges)
